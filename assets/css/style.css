@@ -1,6 +1,6 @@
 /* Navbar */
 .color-navbar {
-    background-color: #BFACE2; /* Replace with your desired color */
+    background-color: #9681EB; /* Replace with your desired color */
     padding: 10px; /* Add padding as needed */
     /* Add any other styles you need for your navbar */
     /* Make it translucid */
@@ -22,17 +22,13 @@
     width: 100%;
 }
 
-.cta-button {
-    left: 50%;
-    transform: translateX(-50%); /* Center horizontally without affecting vertical position */
-}
 
 .overlay-card {
     position: absolute;
     bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(191, 172, 226, 0.75);
+    background-color: rgb(167, 237, 231, 0.5);
     padding: 20px; /* Adjust padding as needed */
     width: 80%; /* Adjust width as needed */
     border-radius: 10px; /* Add border-radius for rounded corners */
@@ -60,27 +56,39 @@
       height: 2rem; /* Adjust height for smaller screens */
     }
 }
-/* Testmionial section */
-.testimonial-container {
+
+/* Feature section */
+.bg-feature {
+  background-color:rgb(69, 207, 221, 0.7);
+    padding: 10px; /* Add padding as needed */
+    /* Add any other styles you need for your navbar */
+    /* Make it translucid */
+}
+.feature-container {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
   }
 
-  .testimonial-photo {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-right: 20px;
-  }
+.feature {
+  text-align: center;
+  margin-right: 20px;
+}
 
-  .testimonial-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.material-icons {
+  font-size: 48px !important;
+}
 
-  .testimonial-text {
-    flex: 1;
-  }
+/* Timetable section */
+
+.bg-timetable {
+  background-color: rgb(150, 129, 235, 0.5);
+    padding: 10px; /* Add padding as needed */
+    /* Add any other styles you need for your navbar */
+    /* Make it translucid */
+}
+
+/* Footer */
+.bg-footer {
+  background-color: rgb(69, 207, 221);
+}
