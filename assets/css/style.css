@@ -92,3 +92,15 @@
 .bg-footer {
   background-color: rgb(69, 207, 221);
 }
+
+/* Images */
+
+.round-picture {
+	margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+    body {
+        height:100vh;
+    }
+}
