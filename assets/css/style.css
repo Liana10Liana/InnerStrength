@@ -1,4 +1,14 @@
 /* Navbar */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container-fluid {
+  flex: 1 0 auto;
+}
+
 .color-navbar {
     background-color: #9681EB; /* Replace with your desired color */
     padding: 10px; /* Add padding as needed */
@@ -68,7 +78,18 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-  }
+}
+
+.accordion-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion-button::after {
+  position: absolute;
+  right: 1rem;
+}
 
 .feature {
   text-align: center;
@@ -103,4 +124,64 @@
     body {
         height:100vh;
     }
+}
+
+/* Canvas */
+
+.canvas-nav {
+  width: 310px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  opacity: .3;
+  transition: opacity .5s;
+}
+
+.canvas-nav:hover {
+  opacity: 1;
+}
+
+.clr {
+  height: 30px;
+  width: 30px;
+  background-color: blue;
+  border-radius: 50%;
+  border: 3px solid rgb(214, 214, 214);
+  transition: transform .5s;
+}
+.clr:hover{
+  transform: scale(1.2);
+}
+.clr:nth-child(1){
+  background-color: #000;
+}
+.clr:nth-child(2){
+  background-color: #EF626C;
+}
+.clr:nth-child(3){
+  background-color: #fdec03;
+}
+.clr:nth-child(4){
+  background-color: #24d102;
+}
+.clr:nth-child(5){
+  background-color: #fff;
+}
+
+.button {
+  border: none;
+  outline: none;
+  padding: .6em 1em;
+  border-radius: 3px;
+  background-color: #03bb56;
+  color: #fff;
+}
+
+.canvas-button .save {
+  background-color: #03bb56;
 }
