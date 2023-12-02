@@ -60,17 +60,24 @@
           <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-6 offset-3 col-sm-6">
               <label for="validationCustom01" class="form-label">First name</label>
-              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <input type="text" class="form-control" id="validationCustom01" value="" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
             <div class="col-md-6 offset-3">
               <label for="validationCustom02" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
+            </div>
+            <div class="col-md-6 offset-3">
+              <label for="validationInputEmail" class="form-label">Email address</label>
+              <div class="input-group has-validation">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              </div>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="col-md-6 offset-3">
               <label for="validationCustomUsername" class="form-label">Username</label>
@@ -83,27 +90,33 @@
               </div>
             </div>
             <div class="col-md-6 offset-3">
-              <label for="validationCustom03" class="form-label">City</label>
-              <input type="text" class="form-control" id="validationCustom03" required>
-              <div class="invalid-feedback">
-                Please provide a valid city.
+              <label for="validationCustom04" class="form-label">Are you new to yoga?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  No
+                </label>
               </div>
             </div>
             <div class="col-md-6 offset-3">
-              <label for="validationCustom04" class="form-label">State</label>
+              <label for="validationCustom04" class="form-label">Level</label>
               <select class="form-select" id="validationCustom04" required>
                 <option selected disabled value="">Choose...</option>
-                <option>...</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
               </select>
-              <div class="invalid-feedback">
-                Please select a valid state.
-              </div>
             </div>
             <div class="col-md-6 offset-3">
-              <label for="validationCustom05" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="validationCustom05" required>
-              <div class="invalid-feedback">
-                Please provide a valid zip.
+              <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile02">
+                <label class="input-group-text" for="inputGroupFile02">Upload</label>
               </div>
             </div>
             <div class="col-md-6 offset-3">
@@ -127,17 +140,24 @@
           <form class="row g-3 needs-validation" novalidate>
             <div class="col-md-4">
               <label for="validationCustom01" class="form-label">First name</label>
-              <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+              <input type="text" class="form-control" id="validationCustom01" value="" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
             <div class="col-md-4">
               <label for="validationCustom02" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+              <input type="text" class="form-control" id="validationCustom02" value="" required>
               <div class="valid-feedback">
                 Looks good!
               </div>
+            </div>
+            <div class="col-md-4">
+              <label for="validationInputEmail" class="form-label">Email address</label>
+              <div class="input-group has-validation">
+                <input type="email" class="form-control" id="validationInputEmail" aria-describedby="emailHelp" required>
+              </div>
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
             </div>
             <div class="col-md-4">
               <label for="validationCustomUsername" class="form-label">Username</label>
@@ -150,28 +170,37 @@
               </div>
             </div>
             <div class="col-md-6">
-              <label for="validationCustom03" class="form-label">City</label>
-              <input type="text" class="form-control" id="validationCustom03" required>
-              <div class="invalid-feedback">
-                Please provide a valid city.
+              <label for="validationCustom04" class="form-label">Are you new to yoga?</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Yes
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  No
+                </label>
               </div>
             </div>
-            <div class="col-md-3">
-              <label for="validationCustom04" class="form-label">State</label>
+            <div class="col-md-6">
+              <label for="validationCustom04" class="form-label">Level</label>
               <select class="form-select" id="validationCustom04" required>
                 <option selected disabled value="">Choose...</option>
-                <option>...</option>
+                <option>Beginner</option>
+                <option>Intermediate</option>
+                <option>Advanced</option>
               </select>
-              <div class="invalid-feedback">
-                Please select a valid state.
-              </div>
             </div>
             <div class="col-md-3">
-              <label for="validationCustom05" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="validationCustom05" required>
-              <div class="invalid-feedback">
-                Please provide a valid zip.
+              <div class="input-group mb-3">
+                <input type="file" class="form-control" id="inputGroupFile02">
+                <label class="input-group-text" for="inputGroupFile02">Upload</label>
               </div>
+            </div>
+            <div class="col-12 d-flex justify-content-center">
+              <button class="btn btn-primary" type="submit">Submit form</button>
             </div>
             <div class="col-12">
               <div class="form-check">
@@ -183,9 +212,6 @@
                   You must agree before submitting.
                 </div>
               </div>
-            </div>
-            <div class="col-12 d-flex justify-content-center">
-              <button class="btn btn-primary" type="submit">Submit form</button>
             </div>
           </form>
         </div>
