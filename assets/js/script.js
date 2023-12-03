@@ -81,6 +81,8 @@ if (window.location.pathname == '/sign_up.html') {
                     if (!form.checkValidity()) {
                     event.preventDefault()
                     event.stopPropagation()
+                    } else {
+                        alert('Thank you for signing up!');
                     }
             
                     form.classList.add('was-validated')
