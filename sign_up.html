@@ -9,6 +9,9 @@
   <!-- Material Icons Google font -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Playpen+Sans:wght@100&family=Roboto:wght@400&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
@@ -18,7 +21,7 @@
       <span class="material-icons md-light">
         spa
       </span>
-      <a class="navbar-brand text-white" href="#">InnerStrength</a>
+      <a class="navbar-brand text-white title-font" href="#">InnerStrength</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -47,7 +50,7 @@
       <div class="container bg-white buffer-section">
       </div>
       <div class="col-sm-12 d-flex justify-content-center">
-        <h1>Sign Up</h1>
+        <h1 class="title-font">Sign Up</h1>
       </div>
     </div>
     <!-- Buffer container -->
@@ -57,10 +60,13 @@
       <div class="col-sm-12 d-flex justify-content-center">
         <!-- Medium and up -->
         <div class="container-fluid d-none d-md-block">
-          <form class="row g-3 needs-validation" novalidate>
+          <form id="form_md" class="row g-3 needs-validation" novalidate>
             <div class="col-md-6 offset-3 col-sm-6">
               <label for="validationCustom01" class="form-label">First name</label>
               <input type="text" class="form-control" id="validationCustom01" value="" required>
+              <div class="invalid-feedback">
+                Please write your first name.
+              </div>
               <div class="valid-feedback">
                 Looks good!
               </div>
@@ -68,6 +74,9 @@
             <div class="col-md-6 offset-3">
               <label for="validationCustom02" class="form-label">Last name</label>
               <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="invalid-feedback">
+                Please write your last name.
+              </div>
               <div class="valid-feedback">
                 Looks good!
               </div>
@@ -137,10 +146,13 @@
         </div>
         <!-- Small and xs -->
         <div class="container-fluid d-block d-sm-block d-md-none">
-          <form class="row g-3 needs-validation" novalidate>
+          <form id="form_sm" class="row g-3 needs-validation" novalidate>
             <div class="col-md-4">
               <label for="validationCustom01" class="form-label">First name</label>
               <input type="text" class="form-control" id="validationCustom01" value="" required>
+              <div class="invalid-feedback">
+                Please write your first name.
+              </div>
               <div class="valid-feedback">
                 Looks good!
               </div>
@@ -148,6 +160,9 @@
             <div class="col-md-4">
               <label for="validationCustom02" class="form-label">Last name</label>
               <input type="text" class="form-control" id="validationCustom02" value="" required>
+              <div class="invalid-feedback">
+                Please write your last name.
+              </div>
               <div class="valid-feedback">
                 Looks good!
               </div>
@@ -224,9 +239,10 @@
       <div class="col-sm-12 d-flex justify-content-center">
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <h5 class="card-title">Canvas Game - Subscription</h5>
+            <p class="card-text">Do you fancy a free month's worth of yoga with us? Try your artistic skills with our canvas game!</p>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-              Launch demo modal
+              Absolutely!
           </button>
           </div>
         </div>
@@ -239,15 +255,16 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Canvas Game</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p>The drawing is: #{drawing.random}</p>
+          <p>Here's what you need to do: You'll get a random yoga's position name, and you have to draw it in any background you'd like. Save the picture, and send us with your sign up form. If we deem that your artistic skills are up to scratch, you get an entire month free of charge!</p>
+          <p>Draw a <span class="text-danger" id="random-position"></span> position in your canvas!</p>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <div class="modal-footer d-flex justify-content-center">
           <a href="canvas.html" target="_blank"><button type="button" class="btn btn-primary">Give it a go!</button></a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
     </div>

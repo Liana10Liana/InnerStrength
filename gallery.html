@@ -9,6 +9,9 @@
   <!-- Material Icons Google font -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Playpen+Sans:wght@100&family=Roboto:wght@400&display=swap" rel="stylesheet">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
@@ -18,7 +21,7 @@
       <span class="material-icons md-light">
         spa
       </span>
-      <a class="navbar-brand text-white" href="#">InnerStrength</a>
+      <a class="navbar-brand text-white title-font" href="#">InnerStrength</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -47,50 +50,50 @@
       <div class="container bg-white buffer-section">
       </div>
       <div class="col-sm-12 d-flex justify-content-center">
-        <h1>Gallery</h1>
+        <h1 class="title-font">Gallery</h1>
       </div>
     </div>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         <div class="col">
             <div class="card">
             <img src="assets/images/gallery_1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="card-body card-hide">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
             <img src="assets/images/gallery_2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="card-body card-hide">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
             </div>
         </div>
         <div class="col">
             <div class="card">
             <img src="assets/images/gallery_3.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+            <div class="card-body card-hide">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
             </div>
             </div>
         </div>
         <div class="col">
-            <div class="card">
+          <div class="card">
             <img src="assets/images/gallery_4.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+            <div class="card-body card-hide">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
-            </div>
+          </div>
         </div>
         <div class="col">
             <div class="card">
             <img src="assets/images/gallery_5.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body card-hide">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
@@ -99,7 +102,7 @@
         <div class="col">
             <div class="card">
             <img src="assets/images/gallery_6.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body card-hide">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
             </div>
@@ -112,6 +115,18 @@
   <div class="container bg-white buffer-section">
   </div>
   <div class="container bg-white buffer-section">
+  </div>
+  <!-- Image modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body">
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
   </div>
   <!-- Footer -->
   <footer class="bg-footer text-light text-center py-4 border-top border-dark">

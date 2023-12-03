@@ -1,9 +1,21 @@
-/* Navbar */
+
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: 'Roboto', sans-serif
 }
+
+/* Text */
+.title-font {
+  font-family: 'Lora', serif;
+}
+
+.text-font {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
 
 .container-fluid {
   flex: 1 0 auto;
@@ -124,6 +136,21 @@ body {
     body {
         height:100vh;
     }
+}
+
+/* Cards */
+
+.card-hide {
+  display: none;
+}
+
+/* Buttons */
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
 }
 
 /* Canvas */
