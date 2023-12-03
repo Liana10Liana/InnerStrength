@@ -78,11 +78,14 @@ if (window.location.pathname == '/sign_up.html') {
             Array.prototype.slice.call(forms)
                 .forEach(function (form) {
                 form.addEventListener('submit', function (event) {
-                    if (!form.checkValidity()) {
                     event.preventDefault()
-                    event.stopPropagation()
+                    
+                    if (!form.checkValidity()) {
+                        event.stopPropagation()
                     } else {
-                        alert('Thank you for signing up!');
+                        var toastEl = document.getElementById('signupToast');
+                        var toast = new bootstrap.Toast(toastEl);
+                        toast.show();
                     }
             
                     form.classList.add('was-validated')
