@@ -1,6 +1,6 @@
 // Index 
 // check whether html file is called 'index.html', if so, set index to its initial state
-if (window.location.pathname == '/index.html' || window.location.pathname == '/about_us.html') {
+if (document.location.href.endsWith('index.html') || document.location.href.endsWith('about_us.html')) {
     document.addEventListener('DOMContentLoaded', (event) => {
         // Get the button
         let button = document.getElementById('scrollToTopButton');
@@ -25,7 +25,7 @@ if (window.location.pathname == '/index.html' || window.location.pathname == '/a
 
 // Gallery
 // check whether html file is called 'gallery.html', if so, set gallery to its initial state
-if (window.location.pathname == '/gallery.html') {
+if (document.location.href.endsWith('gallery.html')) {
     window.addEventListener('load', () => {
         let cards = document.querySelectorAll('.card');
         let card_images = document.querySelectorAll('.card-img-top');
@@ -66,7 +66,7 @@ if (window.location.pathname == '/gallery.html') {
 
 // Sign up form
 // check whether html file is called 'sign_up.html', if so, set form validation
-if (window.location.pathname == '/sign_up.html') {
+if (document.location.href.endsWith('sign_up.html')) {
     window.addEventListener('load', () => {
         (function () {
             'use strict'
@@ -115,7 +115,7 @@ if (window.location.pathname == '/sign_up.html') {
 
 // Canvas element
 // check whether html file is called 'canvas.html', if so, set canvas
-if (window.location.pathname == '/canvas.html') {
+if (document.location.href.endsWith('canvas.html')) {
     window.addEventListener('load', () => {
         const canvas = document.getElementById('canvas');
         canvas.height = window.innerHeight;
