@@ -157,9 +157,12 @@ if (document.location.href.endsWith('canvas.html')) {
             a.download = 'canvas.png';
             a.click();
         });
-
         // Start drawing
         window.addEventListener('mousedown', (e) => {
+            draw = true;
+        });
+
+        window.addEventListener('touchstart', (e) => {
             draw = true;
         });
 
@@ -168,9 +171,26 @@ if (document.location.href.endsWith('canvas.html')) {
             draw = false;
         });
 
+        window.addEventListener('touchend', (e) => {
+            draw = false;
+        });
+
         // Track mouse position
-        window.addEventListener('mousemove', (e) => {
-            
+        window.addEventListener('mousemove', drawLine);
+
+        // Track touch position
+        window.addEventListener('touchmove', (e) => {
+            // Prevent scrolling
+            e.preventDefault();
+
+            // Get the touch position
+            let touch = e.touches[0];
+
+            // Call the drawLine function with the touch position
+            drawLine(touch);
+        });
+
+        function drawLine(e) {
             if(prevX == null || prevY == null || !draw) {
                 prevX = e.clientX;
                 prevY = e.clientY;
@@ -190,6 +210,6 @@ if (document.location.href.endsWith('canvas.html')) {
             // Update previous mouse position
             prevX = currentX;
             prevY = currentY;
-        });
+        }
     });
 }
