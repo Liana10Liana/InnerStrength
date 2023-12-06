@@ -182,13 +182,13 @@ if (document.location.href.endsWith('canvas.html')) {
         window.addEventListener('touchmove', (e) => {
             // Prevent scrolling
             e.preventDefault();
-
+        
             // Get the touch position
             let touch = e.touches[0];
-
+        
             // Call the drawLine function with the touch position
             drawLine(touch);
-        });
+        }, { passive: false }); // Add this line
 
         function drawLine(e) {
             if(prevX == null || prevY == null || !draw) {
